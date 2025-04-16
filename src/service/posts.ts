@@ -10,13 +10,17 @@ export type Post = {
   featured: boolean;
 };
 
-export async function getPosts(): Promise<Post[]> {
+export async function getAllPosts(): Promise<Post[]> {
   const filePath = path.join(process.cwd(), 'data', 'posts.json');
   const fileContent = await fs.readFile(filePath, 'utf-8');
   const posts: Post[] = JSON.parse(fileContent);
 
   // const sortedPosts = posts.sort((a, b) => (a.date > b.date ? -1 : 1));
   const sortedPosts = posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-
   return sortedPosts;
+}
+
+export async function getFeaturedPosts(): Promise<Post[]> {
+  const posts = await getAllPosts();
+  return posts.filter((post) => post.featured);
 }

@@ -1,18 +1,19 @@
 import { Post } from '@/service/posts';
 import Image from 'next/image';
+import Link from 'next/link';
 
 type Props = {
   post: Post;
 };
 
-export default function PostCard({ post }: Props) {
+export default function PostCard({ post: { title, description, date, category, path } }: Props) {
   return (
-    <div className='flex flex-col'>
-      <Image src={`/posts/${post.path}.png`} alt={post.title} width={200} height={100} />
-      <p>{post.date}</p>
-      <p>{post.title}</p>
-      <p>{post.description}</p>
-      <p>{post.category}</p>
-    </div>
+    <Link href={`/posts/${path}`}>
+      <Image src={`/images/posts/${path}.png`} alt={title} width={300} height={200} />
+      <time>{date.toString()}</time>
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <span>{category}</span>
+    </Link>
   );
 }

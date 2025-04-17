@@ -40,6 +40,30 @@
     "featured": false
   },
   {
+    "title": "2022년 리뷰",
+    "description": "2022년 한해 동안 배운 기술들, 생각들 정리",
+    "date": "2022-12-31",
+    "category": "my story",
+    "path": "review-2022",
+    "featured": false
+  },
+  {
+    "title": "2022년 리뷰",
+    "description": "2022년 한해 동안 배운 기술들, 생각들 정리",
+    "date": "2022-12-31",
+    "category": "my story",
+    "path": "review-2022",
+    "featured": false
+  },
+  {
+    "title": "2022년 리뷰",
+    "description": "2022년 한해 동안 배운 기술들, 생각들 정리",
+    "date": "2022-12-31",
+    "category": "my story",
+    "path": "review-2022",
+    "featured": false
+  },
+  {
     "title": "Node 프로 팁!",
     "description": "노드를 프로처럼 사용하기 위한 모든 팁들을 정리!",
     "date": "2023-04-10",

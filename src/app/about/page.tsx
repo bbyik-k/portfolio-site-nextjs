@@ -1,4 +1,11 @@
 import Profile from '@/components/Profile';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Me',
+  description: 'bbyik 커리어 소개',
+};
+
 const TITLE_CLASS = 'text-2xl font-bold my-2';
 export default function AboutPage() {
   return (

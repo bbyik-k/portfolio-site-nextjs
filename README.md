@@ -1,6 +1,6 @@
 # Portfolio site - Next.js
 
-**https://portfolio.vercel.app/**
+**[portfolio vercel 배포 링크](https://portfolio-site-nextjs-nine.vercel.app/)**
 
 ## 📌 프로젝트 소개
 
@@ -86,4 +86,4 @@ yarn start
 
 ## 🔗 배포 링크
 
-👉 [https://portfolio.vercel.app](https://portfolio.vercel.app)
+👉 [https://portfolio.vercel.app](https://portfolio-site-nextjs-nine.vercel.app/)

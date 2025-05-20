@@ -12,6 +12,22 @@ export default function Profile() {
           <Image className='rounded-full ml-3 mr-5' src={profileImage} alt='character' width={200} />
           <div>
             <div>
+              <h3 className='text-xl font-semibold'>
+                🔗 현재 사이트는 작업 진행 중이며,
+                <br />
+                전체 포트폴리오 내용은 아래 링크에서 확인하실 수 있습니다!
+              </h3>
+              <a
+                href='https://bbyiktion.notion.site/1c79e19ed9c5805593e3c5b135d3b58f'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='inline-block mt-1 px-4 py-2 rounded-lg bg-primary text-white font-medium hover:bg-yellow-400 hover:text-black transition-colors'
+                aria-label='김병익 포트폴리오 링크'
+              >
+                👉 포트폴리오 Link
+              </a>
+            </div>
+            <div className='mt-3'>
               <h3 className='text-xl font-semibold'>👋 사용자 경험과 팀의 개발 생산성을 함께 고민하는 프론트엔드 개발자입니다.</h3>
               <p>기획 의도를 정확하게 파악하고, 실제 사용자 경험까지 고려한 화면을 구현하는 데 집중하고 있어요.</p>
               <p>로봇 인터페이스와 키오스크 형식의 화면 개발을 담당하며, 복잡한 인터랙션을 직관적인 UI 로 구성하는 설계를 해왔어요.</p>
